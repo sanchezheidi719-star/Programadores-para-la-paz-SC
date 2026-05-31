@@ -15,6 +15,14 @@ app.get('/mensaje/:nombre', (req, res) => {
   res.send(`Hola ${req.params.nombre}, bienvenido al servidor`);
 });
 
+app.post('/reporte', (req, res) => {
+  const mensaje = req.body.mensaje;
+  res.json({
+    estado: "Reporte recibido",
+    mensaje: mensaje
+  });
+});
+
 app.listen(3000, () => {
   console.log('Servidor ejecutándose en puerto 3000');
 });

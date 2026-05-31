@@ -1,0 +1,13 @@
+PRUEBAS DEL SERVIDOR - semana5
+
+1. http://localhost:3000/
+   Resultado: "Servidor activo"
+   Descripción: Es la ruta principal (raíz) del servidor. Al visitarla, el servidor responde con un mensaje simple confirmando que está en funcionamiento.
+
+2. http://localhost:3000/saludo
+   Resultado: "Hola comunidad"
+   Descripción: Es una ruta estática que devuelve un saludo general. No recibe ningún parámetro y siempre responde con el mismo mensaje.
+
+3. http://localhost:3000/mensaje/juan
+   Resultado: "Hola juan, bienvenido al servidor"
+   Descripción: Es una ruta dinámica que recibe un parámetro llamado :nombre en la URL. El servidor toma ese valor y lo incluye en el mensaje de respuesta. Si se cambia "juan" por otro nombre, la respuesta cambia de forma automática.

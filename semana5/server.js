@@ -10,3 +10,11 @@ app.get('/', (req, res) => {
 app.get('/saludo', (req, res) => {
   res.send('Hola comunidad');
 });
+
+app.get('/mensaje/:nombre', (req, res) => {
+  res.send(`Hola ${req.params.nombre}, bienvenido al servidor`);
+});
+
+app.listen(3000, () => {
+  console.log('Servidor ejecutándose en puerto 3000');
+});
